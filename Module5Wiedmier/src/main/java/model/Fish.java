@@ -12,7 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 
+ * Class for Fish objects
  */
 @Entity
 @Table(name="fish")
@@ -28,7 +28,7 @@ public class Fish {
 	
 	//Constructors
 	/**
-	 * 
+	 * No Arg Constructor
 	 */
 	public Fish() {
 		super();
