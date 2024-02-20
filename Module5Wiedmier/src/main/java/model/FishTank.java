@@ -27,7 +27,7 @@ public class FishTank {
 	private String fishTankName; 
 	@ManyToOne(cascade=CascadeType.PERSIST)
 	private Owner owner; 
-	@OneToMany(cascade=CascadeType.PERSIST, fetch=FetchType.EAGER)
+	@OneToMany(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
 	private List<Fish> listOfFish;
 	
 	//Constructors

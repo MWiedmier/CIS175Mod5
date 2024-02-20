@@ -70,7 +70,7 @@ public class FishTankNavigationServlet extends HttpServlet {
 			} 
 		 
 		} else if (act.equals("add")) { 
-			getServletContext().getRequestDispatcher("/new-fishtank.jsp").forward(request, response); 
+			getServletContext().getRequestDispatcher("addFishForListServlet").forward(request, response); 
 		}
 	}
 

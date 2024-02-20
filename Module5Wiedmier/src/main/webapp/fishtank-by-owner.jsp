@@ -16,8 +16,8 @@
 					<td><input type="radio" name="id" value="${currenttank.id}"></td> 
 					<td><h2>${currenttank.fishTankName}</h2></td></tr> 
 				<tr><td colspan="3">Owner: ${currenttank.owner.ownerName}</td></tr> 
-			<c:forEach var = "listVal" items = "${currenttank.listOfFish}"> 
-				<tr><td></td><td colspan="3">${listVal.species}, ${listVal.numOfFish}</td></tr> 
+			<c:forEach var="currentfish" items = "${currenttank.listOfFish}"> 
+				<tr><td></td><td colspan="3">${currentfish.species}, ${currentfish.numOfFish}</td></tr> 
 			</c:forEach> 
 			</c:forEach> 
 		</table> 

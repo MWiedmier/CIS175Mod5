@@ -11,10 +11,10 @@
 	<h1>Edit Fish Tank</h1>
 	<form action = "editFishTankServlet" method="post"> 
 		<input type ="hidden" name = "id" value= "${fishTankToEdit.id}"> 
-		Tank Name: <input type="text" name="tankName" value="${fishTankToEdit.tankName}"><br />  
+		Tank Name: <input type="text" name="tankName" value="${fishTankToEdit.fishTankName}"><br />  
 		Shopper Name: <input type = "text" name = "ownerName" value="${fishTankToEdit.owner.ownerName}"><br /> 
 		Available Items:<br /> 
-		<select name="allItemsToAdd" multiple size="6"> 
+		<select name="allFish" multiple size="6"> 
 		<c:forEach items="${requestScope.allFish}" var="currentfish"> 
 		<option value="${currentfish.id}">${currentfish.species} | 
 		${currentfish.numOfFish}</option> 
